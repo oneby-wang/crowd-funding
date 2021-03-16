@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    name: mydb
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/springboot?serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 192.168.152.129
+  thymeleaf:
+    prefix: classpath:/templates/ # 模板所在位置
+    suffix: .html                 # 模板后缀名
+    cache: false                  # 开发时禁用缓存
+mybatis:
+  mapper-locations: classpath*:/mybatis/mapper/*Mapper.xml
+logging:
+  level:
+    com.atguigu.spring.boot.mapper: debug
+    com.atguigu.spring.boot.test: debug

@@ -1,0 +1,15 @@
+# Eclipse
+.metadata
+**/.settings
+**/build
+**/target
+
+*.classpath
+*.project
+*.springBeans
+*.springWebflow
+*.factorypath
+
+# IDEA
+**/.idea
+*.iml

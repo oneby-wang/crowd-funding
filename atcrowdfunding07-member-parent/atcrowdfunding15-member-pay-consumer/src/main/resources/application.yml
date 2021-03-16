@@ -1,0 +1,28 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: atguigu-crowd-pay
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: 192.168.152.129
+  session:
+    store-type: redis
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+
+ali:
+  pay:
+    alipay-public-key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhdd7eIXGBBhSC5bNh7bBFML4HgIqrxTi4wNdrRfDu7NxpQTHniTyL0u2J3t52h8ZivfSt+pNtQMEbOf9nF5VnBS2+6JROhpwEgLy1zhpL/jGTOR8Z3madkX+7uq0Ug8OeWloZM+tMMtFHhoyGaGOgv7L+OE1JYL3DcN8KkB0M+tYuXl1RT/AMRoeG3OXW7XENtd3dFPoMQmwvworjWxzOBJ52RqNL/6ExD3Bldf5t2zlqGy25mu0OGCs6wrbQbV/Up8yQNsyk/ODQ9XPvI3DRTWzk0jqTUuNtgaNTE9ZZAl+iEXxOtRTfMhENVw/uh5TS3iBNl4CnH5cwNMgGhcVIwIDAQAB
+    app-id: 2016102900776929
+    charset: utf-8
+    gateway-url: https://openapi.alipaydev.com/gateway.do
+    merchant-private-key: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCX5uLdfs+oPvVxp0yw6lDyWTTsigExAsCAUAFQKinMwwMIL6m+0PJHQIwUaVfrh1Ai0dQSldAMSVnNw61JBJ7vDKDXzFB753w0sp2mKrFXinmgD0oU69iCRcEdGrYn9AUqJKiO5hv6oi3/zLE8ULNYPmMQzz98dSqLbD1Fthb7sxf7dyOLm2jLTowLS2zdgoInIkSuhb9ODsCfZodaG6iTZXdJ2a7jYzz3bjKlsajaaBRq96c7Q1NGuEMn1BzafYQOvFC1DJ3s59necanhNrXwbTQeoBZnkcYL8HlB1+ygKffcayFvt9QHTEoJ73Jq29aW81fRUPuItgmRdAZj2FBzAgMBAAECggEAcHW3sFSaWO2DuckqtjBEDaiNzjG+ABMRge25iygsGjSmogDnoyX+uVHIY7Q6K13army6nafch7wmiHg+arjJEiI/UoUpcRJImptCrCsfcLhMo3uuVR7nBEuwVWPZSGsZB8JsKJ+kR0Ka268n6Ie2v7YwkdleHz5/aQmRs3LEQUOIrwBAqx29xp7aZ00aG6TMfpRBVRw5spcKrqZYXOO2ts8wVx+TeKxRQdL0oKOWcozizETxDEAYqPDQKODp1SnYKpg77IJf/c4Di0GWE+yrKMbwCTGGciNuYOmUpJ7bfOBGXBm57/updlLLTestZoAcayzqEcbli2CjpC58bd9fAQKBgQDdElG8YRLNTKBTkvD2W1SbiPD/oO/siAtGqOV+fLYO3RILXrxOtRkd2HwgnTiXExLsGF+o8cYHcDkM9xrat9l7SQXVvdHunjxdQtWZYFTJkhc0nATv3/12VH2Ee6vFRmm7YA47tN+6PjUNA+t9z2vu/GIIvx2/MxUhJwUExR+18QKBgQCv5tyiv3+9HNthFdbYudEqg9mPH5RPYcMp52M9cNATY3rZgL9cl3n6EiJIIGeOr6K1zWyojbGcKCoRzAGiFmFxIfr+dxcptq8xrfGS2/S2GcbcmjFgKxaxiPoKA9JqfG1cte+gqpBhG+IWkSVIjYVqhR5CtezgTlX9yl1GcMb4owKBgQCStWmQvksf+04aqFVI6GtJnKNywXb3XYE+Ly+9tT2Mt6EV8pS9FunIKLaXXj8D4yCXlcVF9M0aepshw4sKwx+M9XTt177NwC0HJydhVdBuxIip3TBZkChAsulpVjkz/fqE4sYPUYV3r3i9XnCVWWWjf9H/Q/WVwWywR5jJBZh5wQKBgGcEgAdYvAkXk2vijHdVLCkIGyx1RDjReqlZ+IcNQO95/YLQokIp/Kf2Ytl3EO9B8bsj2hVFFtXrt+fAYNx62wqU6hiJyqkFcslXo/lslH7pzct5Cp3V3m6PWFDxOBRhVvNLIlIoUnJtEBZDX2CEcbSWzcgoH9imSDpggAw3FHCdAoGBAIgBm4+zE8tsaQESiN107T/SJ/NU4clwwi8NPnBECNcXi9BAIY2/hge2BZYYQ+63jSDAcRNDaKfAjwgewStNP+eDAlMaF05dEauYrNGQ8ZaW1V8qaKSN9cvwEPQXzrx26XiZEHWEEqtcQQLuehPNZmuKrYtqNJx6972bVTmYFeuQ
+    notify-url: http://mz8pjd.natappfree.cc/pay/notify
+    return-url: http://www.baidu.com
+    sign-type: RSA2
